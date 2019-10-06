@@ -1,0 +1,24 @@
+<- Vertex ----------------------------------------------------------------------
+The Vertex class represents simply offers a coordinate
+encapsulation and provides reading and writing assessors for The
+corresponding attributes.
+
+The Vertex class has 5 attributes:
+
+’x’: x axis coordinate, mandatory.
+’y’: y axis coordinate, mandatory.
+’z’: z axis coordinate, mandatory.
+’w’: optional, by default is worth 1.0.
+’color’: optional, by default is worth a new instance of the color white.
+
+
+The class provides the following methods :
+
+__toString();
+See example output for for- matting. Please note that the vertex color is added
+to the string if and only if the static attribute verbose is true.
+
+doc();
+Returns the documentation of the class in string.
+
+---------------------------------------------------------------------- Vertex ->

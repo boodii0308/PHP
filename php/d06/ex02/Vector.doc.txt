@@ -1,0 +1,43 @@
+<- Vector ----------------------------------------------------------------------
+The Vector class using 2 vertex as a destinationand orgin to find a vector.
+if orgin is not defined it will set to default.
+With this vector we can find sum of vectors,difference of vectors, opposite vecter
+magnitude, dot product of 2 vecter, cos of 2 vector, crossproduct of 2 vector.
+
+The Vertex class has 4 attributes :
+
+’x’: x axis coordinate, mandatory.
+’y’: y axis coordinate, mandatory.
+’z’: z axis coordinate, mandatory.
+’w’: optional, by default is worth 0.0.
+
+The class provides the following methods :
+
+float magnitude() :
+returns the vector’s length (or "norm").
+
+Vector normalize() :
+returns a normalized version of the vector. If the vector is
+already normalized, returns a fresh copy of the vector.
+
+Vector add( Vector $rhs ) :
+returns the sum vector of both vectors.
+
+Vector sub( Vector $rhs ) :
+returns the difference vector of both vectors.
+
+Vector opposite() :
+returns the opposite vector.
+
+Vector scalarProduct( $k ) :
+returns the multiplication of the vector with a scalar.
+
+float dotProduct( Vector $rhs ) :
+returns the scalar multiplication of both vec- tors.
+
+float cos( Vector $rhs ) :
+returns the angle’sAppendix cosine between both vec- tors.
+
+Vector crossProduct( Vector $rhs ) :
+returns the cross multiplication of both vectors (right-hand mark!)
+---------------------------------------------------------------------- Vector ->

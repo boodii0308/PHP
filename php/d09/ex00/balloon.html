@@ -1,0 +1,63 @@
+<html>
+	<head>
+			<meta charset="UTF-8">
+			<title>Balloon</title>
+			<script>
+				var x;
+				var size = 200;
+				function resize(){
+					x = document.getElementById('balloon');
+					if(size >= 420)
+						size = 200;
+					else
+						size +=10;
+					x.style.height = size + 'px';
+					x.style.width = size + 'px';
+					if (size % 30 == 20)
+						x.style.backgroundColor = '#ff0000';
+					if (size % 30 == 0)
+						x.style.backgroundColor = '#00ff00';
+					else if (size % 30 == 10)
+						x.style.backgroundColor = '#0000ff';
+
+				}
+				function shrink(){
+					x = document.getElementById('balloon');
+					if(size < 200)
+						size = 200;
+					else
+						size -= 5;
+					x.style.height = size + 'px';
+					x.style.width = size + 'px';
+					if (size % 30 == 20)
+						x.style.backgroundColor = '#ff0000';
+					if (size % 30 == 0)
+						x.style.backgroundColor = '#00ff00';
+					else if (size % 30 == 10)
+						x.style.backgroundColor = '#0000ff';
+
+				}
+			</script>
+			<style>
+				div.button{
+					display: block;
+					background-color:#ff0000;
+					text-align: center;
+					margin-top: 30%;
+					cursor: e-resize;
+					box-sizing:border-box;
+					width: 200px;
+					height: 200px;
+					border-radius: 50%;
+					margin: 0 auto;
+					margin-top: 30%;
+					transition: 0.2s;
+				}
+			</style>
+
+	</head>
+	<body>
+		<div id = "balloon" class= "button" onclick = "resize()" onmouseout="shrink()">
+		</div>
+	</body>
+</html>

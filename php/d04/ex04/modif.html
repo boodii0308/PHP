@@ -1,0 +1,56 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Chat</title>
+	<style>
+		body {
+			background-image: url("../resources/ocean.jpg");
+			background-color: antiquewhite;
+			background-blend-mode: multiply;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		form{
+			padding-top: 20%;
+			text-align: center;
+			font-size: 30px;
+		}
+		input{
+			width: 150px;
+			height: 30px;
+			font-size: 15px;
+			border-radius: 5%;
+		}
+		.curve{
+			border-end-end-radius: 4%;
+			color: whitesmoke;
+			text-align: center;
+		}
+		a{
+			text-align: center;
+			width: 150px;
+			height: 20px;
+			border-radius: 5%;
+			margin : auto;
+			padding-left: 220px;
+		}
+		button{
+			text-align: center;
+			margin : auto;
+			width: 150px;
+		}
+	</style>
+	</head>
+	<body>
+
+<form action="modif.php" method = "POST">
+		Username: <input type = "text" name = "login" value=""/>
+		<br />
+		OldPassword: <input type = "text" name = "oldpw" value=""/>
+		<br />
+		NewPassword: <input type = "text" name = "newpw" value=""/>
+		<br />
+		<input type = "submit" name = "submit" value = "OK" />
+</form>
+</body>
+</html>

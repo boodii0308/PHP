@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Calc</title>
+		<script>
+			var x;
+			var y;
+			var op;
+			var res;
+			setInterval(function()
+					{
+						alert("Please, use me... senpai...");
+					}, 30000);
+
+			function calcul(){
+				x = Number(document.getElementById('val1').value);
+				y = Number(document.getElementById('val2').value);
+				op = document.getElementById('operator').value;
+				if (x < 0 || y < 0 || x == "" || y == "")
+				{
+					consule.log("Error :(");
+					alert("Error :(");
+					return ;
+				}
+				if ((op == '/' || op == '%') && y === 0)
+				{
+					console.log("It's over 9000!");
+					alert("It's over 9000!");
+					return ;
+				}
+				if (op == '+')
+					res = x + y;
+				else if (op == '-')
+					res = x - y;
+				else if (op == '*')
+					res = x * y;
+				else if (op == '/')
+					res = x / y;
+				else if (op == '%')
+					res = x % y;
+				console.log(res);
+				alert (res);
+			}
+		</script>
+		<style>
+			input{
+				margin: 0 auto;
+				padding: 30;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<input id = "val1" type="number" name= "left" value="">
+		<select name="oper" id="operator">
+			<option value="*"> * </option>
+			<option value="/"> / </option>
+			<option value="+"> + </option>
+			<option value="-"> - </option>
+			<option value="%"> % </option></select>
+		<input id = "val2" type="number" name= "right" value="">
+		<input type="submit" name ="submit" value="Try me!" onclick = "calcul()">
+	</body>
+</html>
